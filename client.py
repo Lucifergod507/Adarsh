@@ -31,16 +31,14 @@ AUTH_USERS = 1112773045
 sudo_users = [-1112773045]
 
 
-
 class Bot(Client):   
-    def __init__(self):
-        super().__init__(   
-           "bot",
-            api_id=int(os.environ.get("API_ID")),
-            bot_token=os.environ.get("BOT_TOKEN"),
-            api_hash=os.environ.get("API_HASH"))          
+        
             
-            
+bot = Client(
+    "bot",
+    bot_token=os.environ.get("BOT_TOKEN"),
+    api_id=int(os.environ.get("API_ID")),
+    api_hash=os.environ.get("API_HASH"))            
 
 
 
