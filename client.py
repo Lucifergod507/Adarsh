@@ -30,11 +30,7 @@ os.makedirs("./downloads", exist_ok=True)
 AUTH_USERS = 1112773045
 sudo_users = [-1112773045]
 
-#User = Client(name="user", session_string=SESSION)
-#DlBot = Client(name="auto-delete", 
-               api_id=int(os.environ.get("API_ID"),
-               api_hash=os.environ.get("API_HASH"),           
-               bot_token=os.environ.get("BOT_TOKEN"))
+
 
 class Bot(Client):   
     def __init__(self):
