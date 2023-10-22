@@ -1,22 +1,41 @@
-# Channel-Filter-Bot
-Sample Bot - [@YourFindBot](https://www.telegram.dog/YourFindBot)
 
-## How to Use & Deploy This Bot
-Watch Tutorial - [Tutorial Video](https://youtu.be/fiPyOYrwv7Y)
+                                      
+                                      
+<details><summary>Deploy To Render</summary>
+<br>
+<b>
+Use these commands:
+<br>
+<br>
+• Build Command: <code>pip3 install -U -r requirements.txt</code>
+<br>
+<br>
+• Start Command: <code>python3 bot.py</code>
+<br>
+<br>
+Go to https://uptimerobot.com/ and add a monitor to keep your bot alive.
+<br>
+<br>
+Use these settings when adding a monitor:</b>
+<br>
+<br>
+<img src="https://telegra.ph/file/a79a156e44f43c9833b50.jpg" alt="render template">
+<br>
+<br>
+<b>Click on the below button to deploy directly to render ↓</b>
+<br>
+<br>
+<a href="https://render.com/deploy?repo=https://github.com/pjvip/USA_uploader2">
+<img src="https://render.com/images/deploy-to-render-button.svg" alt="Deploy to Render">
+</a>
+</details>                                      
+                                    
 
-### Bot Father Commmands 
-```
-start - Check If I'm Alive or Not!
-id - Get Channel/Group Id
-verify - Send in group & wait for It To Accept
-connect - Link Database Channel/Group to search from
-disconnect - Disconnect Database
-fsub - Add a Force Subscribe Channel
-connections - Get connected channels list
-```
+### Colab
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/.ipyn)
 
-#### Credits :-
+## Deploy To Heroku
 
-[CyniteOfficial](https://github.com/cyniteofficial) - Developer
-
-[@GreyMatter_Bots](https://www.telegram.dog/GreyMatter_Bots) - Me For Promoting This Open Source Project.
+<a href="https://heroku.com/deploy?template=https://github.com/Fakebaba2/bros">
+     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
+  </a>
