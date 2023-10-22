@@ -5,8 +5,8 @@ services:
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
-    repo: https://github.com/pjvip/USA_uploader2.git
-    branch: main
+    repo: https://github.com/pjvip/textconvert.git
+    branch: web
     autoDeploy: false
     envVars:
       - key: BOT_TOKEN
