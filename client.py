@@ -46,6 +46,6 @@ class Bot(Client):
         return proc.returncode,stderr.decode()
      
     @bot.on_message(filters.command(["start"]))
-    async def account_login(bot: Client, m: Message):
+    async def account_login(Bot: Client, m: Message):
         editable = await m.reply_text("**Pradhan this side send /down download and for classplus send /cpd  for /dhurina for /vision**")
     
