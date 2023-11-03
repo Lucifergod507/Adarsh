@@ -106,7 +106,7 @@ if __name__ == "__main__":
         # h = await PRO.get_chat_member(chat_id= int(-1001643243044), user_id=5404384332)
         # print(h)
     
-        await app.setup()
+        
         bind_address = "0.0.0.0"
         await web.TCPSite(app, bind_address, PORT).start()
         bot_info = await PRO.get_me()
