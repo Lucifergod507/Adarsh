@@ -1,4 +1,5 @@
 import os
+from pyrogram import Client as AFK, idle
 from pyrogram.enums import ChatMemberStatus, ChatMembersFilter
 from pyrogram import enums
 from pyrogram.types import ChatMember
