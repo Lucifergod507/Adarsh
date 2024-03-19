@@ -11,13 +11,13 @@ from tglogging import TelegramLogHandler
 from aiohttp import web
 # Config 
 class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
-    API_ID = int(os.environ.get("API_ID", ""))
-    API_HASH = os.environ.get("API_HASH", "")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5323421782:AAFMaCslkGl5adfv7SkZ5_2jICXtkgXLL1k")
+    API_ID = int(os.environ.get("API_ID", "15178129"))
+    API_HASH = os.environ.get("API_HASH", "274a1c7f7ea99a473c6bd8facebc59ed")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
-    AUTH_USERS = os.environ.get('AUTH_USERS', '1905890740').split(',')
+    AUTH_USERS = os.environ.get('AUTH_USERS', '1905890740, 5291627920').split(',')
     for i in range(len(AUTH_USERS)):
         AUTH_USERS[i] = int(AUTH_USERS[i])
 
