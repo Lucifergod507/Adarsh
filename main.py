@@ -6,7 +6,6 @@ import asyncio
 import logging
 import tgcrypto
 from pyromod import listen
-from config import *
 import logging
 from tglogging import TelegramLogHandler
 from aiohttp import web
