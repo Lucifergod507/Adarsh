@@ -82,5 +82,38 @@ if __name__ == "__main__":
         os.makedirs(Config.DOWNLOAD_LOCATION)
     if not os.path.isdir(Config.SESSIONS):
         os.makedirs(Config.SESSIONS)
+PRO = AFK(
+        "AFK-DL",
+        bot_token=Config.BOT_TOKEN,
+        api_id=Config.API_ID,
+        api_hash=Config.API_HASH,
+        sleep_threshold=120,
+        plugins=plugins,
+        workdir= f"{Config.SESSIONS}/",
+        workers= 2,
+    )
 
+    chat_id = []
+    for i, j in zip(Config.GROUPS, Config.AUTH_USERS):
+        chat_id.append(i)
+        chat_id.append(j)
+    
+    
+    async def main():
+        await PRO.start()
+        # h = await PRO.get_chat_member(chat_id= int(-1001643243044), user_id=5404384332)
+        # print(h)
+        bot_info = await PRO.get_me()
+        LOGGER.info(f"<--- @{bot_info.username} Started --->")
+        
+        for i in chat_id:
+            try:
+                await PRO.send_message(chat_id=i, text="Hi Anuj! 🥹")
+            except Exception as d:
+                print(d)
+                continue
+        await idle()
+
+    asyncio.get_event_loop().run_until_complete(main())
+    LOGGER.info(f"<--Stopped--->")
     
