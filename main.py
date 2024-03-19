@@ -11,10 +11,10 @@ import logging
 from tglogging import TelegramLogHandler
 from aiohttp import web
 # Config 
-class Client(bot):
-             bot_token= "5323421782:AAFMaCslkGl5adfv7SkZ5_2jICXtkgXLL1k",
-             api_id= 15178129,
-             api_hash= "274a1c7f7ea99a473c6bd8facebc59ed")
+class Config(object):
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5323421782:AAFMaCslkGl5adfv7SkZ5_2jICXtkgXLL1k")
+    API_ID = int(os.environ.get("API_ID", "15178129"))
+    API_HASH = os.environ.get("API_HASH", "274a1c7f7ea99a473c6bd8facebc59ed")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
