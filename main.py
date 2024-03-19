@@ -82,7 +82,8 @@ if __name__ == "__main__":
         os.makedirs(Config.DOWNLOAD_LOCATION)
     if not os.path.isdir(Config.SESSIONS):
         os.makedirs(Config.SESSIONS)
-PRO = AFK(
+
+    PRO = AFK(
         "AFK-DL",
         bot_token=Config.BOT_TOKEN,
         api_id=Config.API_ID,
@@ -116,4 +117,5 @@ PRO = AFK(
 
     asyncio.get_event_loop().run_until_complete(main())
     LOGGER.info(f"<--Stopped--->")
+
     
