@@ -24,7 +24,7 @@ async def drm(bot: ace, m: Message):
     inputData = await bot.ask(m.chat.id, "**Send**\n\nMPD\nNAME\nQUALITY\nCAPTION")
     mpd, raw_name, Q, CP = inputData.text.split("\n")
     name = f"{TgClient.parse_name(raw_name)} ({Q}p)"
-    print(mpd, name, Q)
+    print(mpd, name, Q, CP)
 
     keys = ""
     inputKeys = await bot.ask(m.chat.id, "**Send Kid:Key**")
