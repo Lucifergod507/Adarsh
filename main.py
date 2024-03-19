@@ -27,7 +27,6 @@ class Config(object):
         GROUPS[i] = int(GROUPS[i])
 
     LOG_CH = -1001652082524
-    PORT = 8080
 # TelegramLogHandler is a custom handler which is inherited from an existing handler. ie, StreamHandler.
 logging.basicConfig(
     level=logging.INFO,
