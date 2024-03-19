@@ -6,14 +6,15 @@ import asyncio
 import logging
 import tgcrypto
 from pyromod import listen
+from config import *
 import logging
 from tglogging import TelegramLogHandler
 from aiohttp import web
 # Config 
-class Config(object):
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "5323421782:AAFMaCslkGl5adfv7SkZ5_2jICXtkgXLL1k")
-    API_ID = int(os.environ.get("API_ID", "15178129"))
-    API_HASH = os.environ.get("API_HASH", "274a1c7f7ea99a473c6bd8facebc59ed")
+class = Client("bot",
+             bot_token= "7117076232:AAEgKgeGdCV3WagWTiZyWeT80aODTVEKZoY",
+             api_id= 9407706,
+             api_hash= "0b75c89e269ad46f30bae2f13fd8c700")
     DOWNLOAD_LOCATION = "./DOWNLOADS"
     SESSIONS = "./SESSIONS"
 
