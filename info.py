@@ -1,6 +1,6 @@
-API_ID       = 
-API_HASH     = ""
-BOT_TOKEN    = ""
+API_ID       = 15178129
+API_HASH     = "274a1c7f7ea99a473c6bd8facebc59ed"
+BOT_TOKEN    = "5323421782:AAFMaCslkGl5adfv7SkZ5_2jICXtkgXLL1k"
 SESSION      = ""
 DATABASE_URI = ""
 LOG_CHANNEL  = -1001884373226
