@@ -11,7 +11,7 @@ import logging
 from tglogging import TelegramLogHandler
 from aiohttp import web
 # Config 
-class = Client("bot",
+class Client("bot",
              bot_token= "5323421782:AAFMaCslkGl5adfv7SkZ5_2jICXtkgXLL1k",
              api_id= 15178129,
              api_hash= "274a1c7f7ea99a473c6bd8facebc59ed")
