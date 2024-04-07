@@ -12,4 +12,5 @@ class Config(object):
     API_ID = int(os.environ["API_ID", "22335135"])
     API_HASH = os.environ["API_HASH", "4273237df621d621f6caeb9c4a3b5495"]
     AUTH_USERS = "6949761949, 5361994895, 1905890740"
+    GROUPS = "-1002050686314"
     
